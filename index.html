@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+	Student Name: Rian Shirayanagi
+	File Name:Myweb
+	Date: Oct/26/2021
+-->
+<html lang="en">
+<head>
+	<title>Better Men Barbershop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<a href="index.html"><img src="images/barber-logo4.png" alt="Better Men Barber Logo"></a>
+		</header>
+		
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li> 
+			<li><a href="about.html">About</a></li> 
+			<li><a href="barbers.html">Barbers</a></li> 
+			<li><a href="shop.html">Shop</a></li> 
+			<li><a href="contact.html">Contact</a></li> 
+		</ul>	
+	</nav>
+	
+	<div id="hero" class="tablet-desktop">
+		<img src="images/hero-image.jpg" alt="barber cutting">
+	</div>
+	
+	<main>
+	
+	<div class="mobile">
+		<script>
+			var today = new Date();
+			var hourNow = today.getHours();
+			var greeting;
+			
+			if (hourNow > 18) { greeting = 'Good evening';
+			} else if (hourNow > 12) { greeting = 'Good afternoon';
+			} else if (hourNow > 0) { greeting = 'Good morning';
+			} else {
+			greeting = 'Welcome';
+			}
+			document.write(greeting);
+			</script>
+		<p>Welcome to Better Man Barbershop. Our mission is to help our client to become the best version of themselves.</p>
+		
+		<h3>Free Hair Treatment!</h3>
+		<p>Call Us Today to Get a Haircut</p>
+		<p class="tel-link"><a href="tel:8145559900">(814) 555-9900</a></p>
+		
+		<h4>Barber Hours:</h4>
+			<ul class="hours">
+				<li>Mon-Fri: 8:00am-8:00pm</li>
+				<li>Saturday: 8:00am-6:00pm</li>
+				<li>Sunday: Closed</li>
+			</ul>
+	</div>
+	
+	<div class="tablet-desktop">
+			<script>
+			var today = new Date();
+			var hourNow = today.getHours();
+			var greeting;
+			
+			if (hourNow > 18) { greeting = 'Good evening';
+			} else if (hourNow > 12) { greeting = 'Good afternoon';
+			} else if (hourNow > 0) { greeting = 'Good morning';
+			} else {
+			greeting = 'Welcome';
+			}
+			document.write(greeting);
+			</script>
+		<p>Welcome to Better Man Barbershop. Our mission is to help our client to become the best version of themselves.</p>
+		
+		<p>We provide various haircuts from short to long hair. For your first haircut, we will offer a FREE hair treatment. Contact us today to get the <span class="action">free hair treatment</span>.</p>
+		
+        <div id="offerEnds"></div>
+		<script src="js/barber.js"></script>
+	</div>
+	</main>	
+		
+	<footer>
+		<p>&copy; Copyright 2021. All rights reserved.</p>
+		<p><a href="bettermen@barber.net">bettermen@barber.net</a></p>
+	</footer>
+
+	</div>
+
+</body>
+
+</html>
