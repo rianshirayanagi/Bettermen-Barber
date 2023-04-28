@@ -294,6 +294,7 @@ footer p a {
 		margin: 0 auto;
 	}
 
+
 }
 
 /* Media Query for Desktop Viewport */
@@ -380,6 +381,50 @@ footer p a {
 	.btn {
 		grid-column: 1 / span 3;
 	}
+	/* Click event example - note style */
+#note {
+  color: #fff;
+  background-color: #132639;
+  opacity: 0.9;
+  box-shadow: -3px 3px 6px #000;
+  padding: 1em 1em 2em 1em;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 1em;
+  left: 0;}
+
+#note .header + div {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  text-align: center;
+  top: 1px;
+  color: #d7666b;
+  padding: 20px;
+  margin: 30px;
+  border: 1px solid #d7666b;}
+
+#note h2 {
+  color: #d7666b;
+  padding-top: 20px;
+  padding-bottom: 20px;}
+
+#note a {
+  text-decoration: none;
+  color: #fff;}
+
+#note .header {
+  text-align: right;
+  background-color: #132639;
+  border: none;
+  padding: 0 0 0 10px;}
+
+.shown {
+  visibility: visible;}
+
+.hidden {
+  visibility: hidden;}
 }
 
 /* Media query for Large dekstop Viewport */
@@ -393,6 +438,52 @@ footer p a {
     color: #ffb87a;
     font-size: 75%;}
 }
+	/* Click event example - note style */
+#note {
+  color: #fff;
+  background-color: #132639;
+  opacity: 0.9;
+  box-shadow: -3px 3px 6px #000;
+  padding: 1em 1em 2em 1em;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 1em;
+  left: 0;}
+
+#note .header + div {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 1);
+  position: relative;
+  text-align: center;
+  top: 1px;
+  color: #d7666b;
+  padding: 20px;
+  margin: 30px;
+  border: 1px solid #d7666b;}
+
+#note h2 {
+  color: #d7666b;
+  padding-top: 20px;
+  padding-bottom: 20px;}
+
+#note a {
+  text-decoration: none;
+  color: #fff;}
+
+#note .header {
+  text-align: right;
+  background-color: #132639;
+  border: none;
+  padding: 0 0 0 10px;}
+
+.shown {
+  visibility: visible;}
+
+.hidden {
+  visibility: hidden;}
+}
+
 
 /* Media Query for Print */
 @media print {
