@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+	Student Name: Rian Shirayanagi
+	File Name:Myweb
+	Date: Oct/26/2021
+-->
+<html lang="en">
+<head>
+	<title>Better Men Barbershop</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">	
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+	<link rel="icon" sizes="192x192" href="images/android-chrome-192x192.png">
+	<script src="js/jquery.js"></script>
+	<link rel="stylesheet" href="css/pepper-grinder/jquery-ui-1.10.3.custom.min.css" />
+</head>
+
+<body>
+	<div id="container">
+		<header>
+			<a href="index.html"><img src="images/barber-logo4.png" alt="Better Men Barber Logo"></a>
+		</header>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li> 
+			<li><a href="about.html">About</a></li> 
+			<li><a href="barbers.html">Barbers</a></li> 
+			<li><a href="shop.html">Shop</a></li> 
+			<li><a href="contact.html">Contact</a></li>
+		</ul>	
+	</nav>
+	</div>
+	
+	<main>
+		
+		<div>
+			<h1>Coming Soon!</h1>
+			<button>What does this page going to be?</button>
+			<p style="display: none">Good question! In this page, we are going to sell our own BettermenBarber products. They include shampoo, conditioner, and styling products. 
+			Unfortunately, our porducts are in production. Below are the description of our produts. Stay in touch with us for the update! </p>
+			<script src="js/shop.js"></script>
+			<script src="js/shop2.js"></script>
+			
+		</div>
+		
+      <div id="prizes">
+        <ul>
+          <li><a href="#tab-1">Shampoo</a></li>
+          <li><a href="#tab-2">Conditioner</a></li>
+          <li><a href="#tab-3">Hair Clay</a></li>
+        </ul>
+        <div id="tab-1">
+          <p>Better Men Shampoo - Our new shampoo can cleanse your scalp and hair without stripping too much of your natural oil. It consist of Aloe Leaf Juice and Rosemary Oil. It's perfect for everyone.</p>
+        </div>
+        <div id="tab-2">
+          <p>Better Men Conditioner - Our new conditioner will nourish and instanly moisturize your hair. It consists of Camellia Seed Oil and Amino Acids. It's perfect for any hair type.</p>
+        </div>
+        <div id="tab-3">
+          <p>Better Men Hair Clay - A nutrient packed hair clay made with organic oils and amino acids to help tame thick, coarse, and wavy hair. It will provide all-day hold with texturize finish. </p>
+        </div>
+      </div>
+
+	<script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+	<script>
+      $(function() {
+        $('#prizes').tabs();
+      });
+    </script>
+		
+		</main>
+		
+		<!-- Use the footer area to add webpage footer content -->
+		<footer>
+			<p>&copy; Copyright 2021. All Rights Reserved.</p>
+			<p><a href="mailto:bettermen@barber.net">bettermen@barber.net</a></p>
+		</footer>
+	
+	</div>
+	
+</body>
+</html>		
