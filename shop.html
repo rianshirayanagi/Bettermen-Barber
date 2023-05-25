@@ -38,6 +38,14 @@
 	
 	<main>
 		
+		<div id="search">
+		  <input type="text" placeholder="filter by search" id="filter-search" />
+		</div>
+		<div id="gallery">
+		  <img src="images/hair-product1.jpg" data-tags="Animators, Illustrators" alt="shampoo" />
+		  <img src="images/conditioner.jpg" data-tags="Photographers, Filmmakers" alt="conditioner" />
+		  <img src="images/pomade.jpg" data-tags="Photographers, Filmmakers" alt="pomade" />
+		</div>		
 		<div>
 			<h1>Coming Soon!</h1>
 			<button>What does this page going to be?</button>
@@ -64,9 +72,12 @@
           <p>Better Men Hair Clay - A nutrient packed hair clay made with organic oils and amino acids to help tame thick, coarse, and wavy hair. It will provide all-day hold with texturize finish. </p>
         </div>
       </div>
+	  
+	  
 
 	<script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/jquery-ui.js"></script>
+	<script src="js/filter-search.js"></script>
 	<script>
       $(function() {
         $('#prizes').tabs();
