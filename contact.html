@@ -10,6 +10,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/ui-lightness/jquery-ui-1.10.3.custom.min.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto&display=swap" rel="stylesheet">	
 	<link rel="shortcut icon" href="images/favicon.ico">
@@ -52,17 +53,22 @@
 		
 			<fieldset>
 				<legend>Customer Information</legend>
-					<label for="fname">First Name:</label>
-					<input type="text" name="fname" id="fname" required>
-					
-					<label for="lname">Last Name:</label>
-					<input type="text" name="lname" id="lname" required>
-					
-					<label for="email">Email:</label>
-					<input type="email" name="email" id="email" required>
-					
-					<label for="phone">Phone:</label>
-					<input type="tel" id="phone" name="phone" required>
+					<div class="name">
+            <label for="name" class="required">Name:</label>
+            <input type="text" placeholder="Enter your name" name="name" id="name" required title="Please enter your name">
+          </div>
+          <div class="email">
+            <label for="email" class="required">Email:</label>
+            <input type="email" placeholder="you@example.com" name="email" id="email" required>
+          </div>
+          <div class="password">
+            <label for="password" class="required">Password:</label>
+            <input type="password" name="password" id="password" required>
+          </div>
+          <div class="password">
+            <label for="conf-password" class="required">Confirm password:</label>
+            <input type="password" name="conf-password" id="conf-password" required>
+          </div>
 			</fieldset>
 			
 			<fieldset>
@@ -86,23 +92,35 @@
 					
 			</fieldset>
 			
-							<fieldset>
-					<legend>Referral Source</legend>
-					<label for="reference">how did you find us?</label>
-					<select name="reference" id="reference">
-						<option value="ad">Advertisement</option>
-						<option value="friend">Friend</option>
-						<option value="Google">Google</option>
-						<option value="social">Social Media</option>
-						<option value="other">Other</option>
-					</select>
-					
-					<label for="questions">Questions?</label>
-					<textarea id="questions" name="questions" rows="5" cols="35"></textarea>
-				</fieldset>
+			<fieldset>
+			<legend>Profile</legend>
+			<div class="birthday">
+            <label for="birthday" class="required">Birthday:</label>
+            <input type="date" name="birthday" id="birthday" placeholder="yyyy-mm-dd" required>
+          </div>
+          <div class="bio">
+            <label for="bio">Short Bio (max 140 characters):</label>
+            <textarea name="bio" id="bio" rows="5" cols="30"></textarea>
+            <span id="bio-count" class="hide">140</span>
+          </div>
+			</fieldset>
 				
-				<input type="submit" id="submit" value="submit" class="btn">
+				<div class="register"><input type="submit" value="Register"></div>
+				
+				<div class="one-third column">
+          
+        </fieldset>
+      </div>
+	  
 		</form>
+		<script src="js/jquery-1.9.1.js"></script>
+  <script src="js/jquery-ui-1.10.3.custom.js"></script>
+  <script src="js/utilities.js"></script>
+  <script src="js/placeholder-polyfill.js"></script>
+  <script src="js/password-signup.js"></script>
+  <script src="js/birthday.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/bio.js"></script>
 </main>
 
 <footer>
